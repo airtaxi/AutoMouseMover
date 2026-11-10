@@ -1,0 +1,33 @@
+#include <windows.h>
+
+#define FILE_VERSION 1, 0, 0, 0
+#define FILE_VERSION_STRING "1.0.0.0"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION FILE_VERSION
+PRODUCTVERSION FILE_VERSION
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEFLAGS 0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE 0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Howon Lee"
+            VALUE "FileDescription", "Moves the mouse cursor to random positions on kiosk PCs"
+            VALUE "FileVersion", FILE_VERSION_STRING
+            VALUE "InternalName", "AutoMouseMover"
+            VALUE "LegalCopyright", "Copyright (c) 2026 Howon Lee"
+            VALUE "OriginalFilename", "AutoMouseMover.exe"
+            VALUE "ProductName", "AutoMouseMover"
+            VALUE "ProductVersion", FILE_VERSION_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
